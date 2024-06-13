@@ -1,0 +1,115 @@
+/* Common styles */
+.app {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Light mode */
+.app.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.app.light-mode h1 {
+    color: #1da1f2;
+}
+
+.app.light-mode p {
+    color: #333333;
+}
+
+.app.light-mode input {
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #cccccc;
+}
+
+.app.light-mode .toggle-mode-btn {
+    background-color: #1da1f2;
+    color: #ffffff;
+}
+
+/* Dark mode */
+.app.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.app.dark-mode h1 {
+    color: #1da1f2;
+}
+
+.app.dark-mode p {
+    color: #cccccc;
+}
+
+.app.dark-mode input {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #666666;
+}
+
+.app.dark-mode .toggle-mode-btn {
+    background-color: #1da1f2;
+    color: #ffffff;
+}
+
+/* Button styles */
+.app .toggle-mode-btn {
+    background-color: #1da1f2;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.app .toggle-mode-btn:hover {
+    background-color: #0e76a8;
+}
+
+.app .toggle-mode-btn:focus {
+    outline: none;
+}
+
+.app.light-mode .toggle-mode-btn {
+    background-color: #1da1f2;
+}
+
+.app.dark-mode .toggle-mode-btn {
+    background-color: #ffffff;
+    color: #1da1f2;
+    border: 2px solid #1da1f2;
+}
+
+/* Input styles */
+.app input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.app input[type="text"]:focus {
+    outline: none;
+    border-color: #1da1f2;
+}
+
+.app.light-mode input[type="text"] {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.app.dark-mode input[type="text"] {
+    background-color: #333333;
+    color: #ffffff;
+    border-color: #666666;
+}
